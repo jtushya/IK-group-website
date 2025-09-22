@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Download, MapPin, TrendingUp, Leaf, Calendar, Users } from 'lucide-react';
+import { Download, MapPin, Leaf, Users } from 'lucide-react';
 import { updatePageSEO, pageSEOConfig } from '../utils/seo';
 
 const Projects = () => {
@@ -57,9 +57,25 @@ const Projects = () => {
   ];
 
   const handleDownload = (pdfName: string) => {
-    // This would typically trigger a PDF download
-    // For now, we'll show an alert since we don't have actual PDF files
-    alert(`${pdfName} download would begin here. Please contact IK Group for the actual brochure.`);
+    // Map PDF names to actual file paths
+    const pdfMapping: { [key: string]: string } = {
+      'V Farms Brochure': '/V Farms-compressed.pdf',
+      'Kilima Agro Farms Brochure': '/Kilima-compressed.pdf',
+      'Investment Guide': '/Kilima-compressed.pdf' // Using Kilima PDF as default for investment guide
+    };
+
+    const pdfPath = pdfMapping[pdfName];
+    if (pdfPath) {
+      // Create a temporary link element to trigger download
+      const link = document.createElement('a');
+      link.href = pdfPath;
+      link.download = pdfName.replace(' Brochure', '').replace(' ', '_') + '.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      alert(`${pdfName} download would begin here. Please contact IK Group for the actual brochure.`);
+    }
   };
 
   return (
@@ -123,7 +139,7 @@ const Projects = () => {
 
                 {/* Highlights Grid */}
                 <div className="grid sm:grid-cols-2 gap-4">
-                  {Object.entries(project.highlights).map(([key, value], idx) => (
+                  {Object.entries(project.highlights).map(([_, value], idx) => (
                     <div key={idx} className="bg-white rounded-lg p-4 shadow-sm border border-purple-100 hover:shadow-md transition-all duration-300">
                       <div className="text-sm font-semibold text-slate-800">{value}</div>
                     </div>

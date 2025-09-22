@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Building2 } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,13 +32,14 @@ const Header = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <Link to="/" className="flex-shrink-0 group">
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                  <Building2 className="w-7 h-7 text-white" />
-                </div>
+                <img
+                  src="/IK_group_logo.png"
+                  alt="IK Group Logo"
+                  className="w-12 h-12 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300"
+                />
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-teal-400 to-teal-500 rounded-full opacity-90"></div>
               </div>
               <div>

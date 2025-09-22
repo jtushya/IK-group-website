@@ -22,5 +22,5 @@ Disallow: /src/
 
 # Allow access to important files
 Allow: /favicon.ico
-Allow: /logo.png
+Allow: /IK_group_logo.png
 Allow: /og-image.jpg

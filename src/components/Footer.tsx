@@ -31,9 +31,11 @@ const Footer = () => {
           <div className="lg:col-span-1 space-y-6">
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 via-pink-400 to-rose-400 rounded-xl flex items-center justify-center shadow-lg">
-                  <Building2 className="w-7 h-7 text-white" />
-                </div>
+                <img
+                  src="/IK_group_logo.png"
+                  alt="IK Group Logo"
+                  className="w-12 h-12 rounded-xl shadow-lg"
+                />
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full opacity-80"></div>
               </div>
               <div>

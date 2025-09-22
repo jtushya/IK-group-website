@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Shield, Leaf, TrendingUp, Users, Award, Globe, Building2 } from 'lucide-react';
 import { updatePageSEO, pageSEOConfig } from '../utils/seo';
 
@@ -101,7 +101,7 @@ const About = () => {
           <div className="relative">
             <img
               src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Our Story"
+              alt="IK Group company history and legacy of sustainable investment excellence"
               className="rounded-2xl shadow-xl w-full h-80 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent rounded-2xl"></div>

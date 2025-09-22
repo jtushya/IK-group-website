@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, ExternalLink, Building2, Heart } from 'lucide-react';
+import { Mail, Phone, MapPin, ExternalLink, Heart } from 'lucide-react';
 
 const Footer = () => {
   const groupCompanies = [

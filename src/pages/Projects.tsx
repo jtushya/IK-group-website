@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Download, MapPin, Leaf, Users } from 'lucide-react';
 import { updatePageSEO, pageSEOConfig } from '../utils/seo';
 

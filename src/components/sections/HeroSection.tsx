@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Leaf, TrendingUp } from 'lucide-react';
 import Button from '../ui/Button';
@@ -87,7 +86,7 @@ const HeroSection = () => {
             <div className="relative">
               <img
                 src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Corporate Success"
+                alt="IK Group sustainable agricultural investment opportunities in Tanzania and India"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
               

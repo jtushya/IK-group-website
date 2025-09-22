@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight, Shield, Leaf, TrendingUp } from 'lucide-react';
 
 const Hero = () => {
@@ -94,7 +93,7 @@ const Hero = () => {
             <div className="relative">
               <img
                 src="https://images.pexels.com/photos/1440722/pexels-photo-1440722.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Corporate Success"
+                alt="IK Group sustainable agricultural investment opportunities in Tanzania and India"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
               

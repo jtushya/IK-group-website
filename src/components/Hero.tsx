@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="absolute bottom-20 right-10 w-40 h-40 bg-purple-200/30 rounded-full blur-xl animate-pulse delay-1000"></div>
       <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-pink-200/30 rounded-full blur-xl animate-pulse delay-500"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fadeInUp">

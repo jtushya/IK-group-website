@@ -26,11 +26,15 @@ const CompanyGrid = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">
           {companies.map((company, index) => (
             <Card key={index} hover className={`bg-gradient-to-br ${company.bgColor} border-slate-200`}>
-              <div className={`w-12 h-12 bg-gradient-to-br ${company.color} rounded-lg flex items-center justify-center mb-4`}>
-                <company.icon className="w-6 h-6 text-white" />
+              <div className="flex items-center space-x-3 mb-4">
+                <img
+                  src="/IK_group_logo.png"
+                  alt="IK Group Logo"
+                  className="w-8 h-8 object-contain"
+                />
+                <h3 className="text-lg font-bold text-slate-900">{company.name}</h3>
               </div>
               
-              <h3 className="text-lg font-bold text-slate-900 mb-2">{company.name}</h3>
               <p className="text-sm text-slate-600 mb-4">{company.description}</p>
               
               <div className="flex gap-2">

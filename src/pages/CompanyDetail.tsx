@@ -5,6 +5,7 @@ import { getCompanyById } from '../data/companies';
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
 import Badge from '../components/ui/Badge';
+import CompanyLogo from '../components/ui/CompanyLogo';
 import { updatePageSEO } from '../utils/seo';
 
 const CompanyDetail = () => {
@@ -51,9 +52,9 @@ const CompanyDetail = () => {
         {/* Hero Section */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
-            <h1 className="text-4xl lg:text-5xl font-bold text-slate-900">
-              {company.name}
-            </h1>
+            <div className="mb-6">
+              <CompanyLogo companyName={company.name} />
+            </div>
             <p className="text-xl text-slate-600 leading-relaxed">
               {company.fullDescription}
             </p>

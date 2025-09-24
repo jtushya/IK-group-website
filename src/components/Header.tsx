@@ -117,15 +117,13 @@ const Header = () => {
                   onMouseLeave={handleDropdownLeave}
                 >
                   {groupCompanies.map((company, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={company.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      to={`/companies/${company.id}`}
                       className="block px-4 py-3 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors text-sm"
                     >
                       {company.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -200,16 +198,14 @@ const Header = () => {
               <div className="border-l-2 border-slate-200 pl-4">
                 <p className="text-sm font-medium text-slate-500 mb-2">Group Companies</p>
                 {groupCompanies.map((company, index) => (
-                  <a
+                  <Link
                     key={index}
-                    href={company.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    to={`/companies/${company.id}`}
                     className="block text-slate-600 hover:text-slate-900 transition-colors py-1 text-sm"
                     onClick={() => setIsOpen(false)}
                   >
                     {company.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
 

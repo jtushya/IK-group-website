@@ -33,7 +33,7 @@ export const companies: Company[] = [
     specialty: 'Traditional & Contemporary Jewelry',
     location: 'Chennai, Tamil Nadu',
     employees: '50+',
-    image: 'https://images.pexels.com/photos/1454444/pexels-photo-1454444.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://blogapi.perrian.com/wp-content/uploads/2022/03/5-Must-Have-Diamond-Jewellery-Pieces-You-Cant-Ignore.jpg',
     services: [
       'Custom Jewelry Design',
       'Traditional Indian Jewelry',
